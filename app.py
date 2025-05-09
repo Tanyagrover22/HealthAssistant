@@ -23,9 +23,9 @@ components.iframe(botpress_url, width=600, height=800)
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # loading the saved models
-diabetes_model = pickle.load(open(f'C:/Users/TanyaGrover/Desktop/New folder (2)/project/multiple-disease-prediction-streamlit-app/saved_models/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open(f'C:/Users/TanyaGrover/Desktop/New folder (2)/project/multiple-disease-prediction-streamlit-app/saved_models/heart_disease_model.sav', 'rb'))
-parkinsons_model = pickle.load(open(f'C:/Users/TanyaGrover/Desktop/New folder (2)/project/multiple-disease-prediction-streamlit-app/saved_models/parkinsons_model.sav', 'rb'))
+diabetes_model = pickle.load(open(f'saved_models/diabetes_model.sav', 'rb'))
+heart_disease_model = pickle.load(open(f'saved_models/heart_disease_model.sav', 'rb'))
+parkinsons_model = pickle.load(open(f'saved_models/parkinsons_model.sav', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
